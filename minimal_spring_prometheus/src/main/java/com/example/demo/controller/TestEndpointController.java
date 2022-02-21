@@ -65,7 +65,7 @@ public class TestEndpointController {
 
     // 트랜잭션/duration 반환
     public Double sumToTps() {
-        return TICK_COUNT/((System.currentTimeMillis()-start_time) / 1000d);
+        return TICK_COUNT/(calcDuration());
     }
 
 
